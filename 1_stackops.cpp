@@ -54,7 +54,9 @@ int main() {
         cout << "2. Pop\n";
         cout << "3. Peek\n";
         cout << "4. Display\n";
-        cout << "5. Exit\n";
+        cout << "5. isEmpty\n";
+        cout << "6. isFull\n";
+        cout << "7. Exit\n";
         cout << "Enter your choice: ";
         cin >> choice;
 
@@ -81,6 +83,20 @@ int main() {
                 break;
 
             case 5:
+                if (isEmpty(S))
+                    cout << "Stack is empty" << endl;
+                else
+                    cout << "Stack is NOT empty" << endl;
+                break;
+
+            case 6:
+                if (isFull(S))
+                    cout << "Stack is full" << endl;
+                else
+                    cout << "Stack is NOT full" << endl;
+                break;
+
+            case 7:
                 cout << "Exiting program..." << endl;
                 return 0;
 
@@ -90,4 +106,4 @@ int main() {
     }
 
     return 0;
-}
+} 
